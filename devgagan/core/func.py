@@ -20,17 +20,11 @@ async def chk_user(message, user_id):
     if user_id in user or user_id in OWNER_ID:
         return 0
     else:
-        keyboard = InlineKeyboardMarkup([
-            [InlineKeyboardButton("Cʟɪᴄᴋ Hᴇʀᴇ ᴛᴏ Sᴇᴇ Pʟᴀɴs", url="https://t.me/pocket_fm_and_kuku_fm/311")],
-            [InlineKeyboardButton("ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ ", url="https://t.me/+9U8Td9WZ2dk1ZGU1"),
-             InlineKeyboardButton("ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ", url="https://t.me/its_me_krish_tg")]
-        ])
-        
-        await message.reply_text(
-            "<b>Hᴇʏ Bʀᴏ/Sɪs ,\n\n<blockquote>Yᴏᴜ Dᴏɴ'ᴛ ʜᴀᴠᴇ ᴀɴʏ Pʀᴇᴍɪᴜᴍ Pʟᴀɴs !! </blockquote>\n\nIғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ʀᴇsᴛʀɪᴄᴛᴇᴅ Cᴏɴᴛᴇɴᴛ ғᴏʀᴍ ᴀɴʏ Bᴏᴛ / Cʜᴀɴɴᴇʟ / Gʀᴏᴜᴘ !! ᴛʜᴇɴ ᴘᴜʀᴄʜᴀsᴇ Oᴜʀ Pʀᴇᴍɪᴜᴍ Pʟᴀɴ ᴀᴛ ᴀғғᴏʀᴅᴀʙʟᴇ ᴘʀɪᴄᴇ ᴛᴏ ᴜsᴇ ᴛʜᴇ ʙᴏᴛ !!\n\n<i>Pᴏᴡᴇʀᴇᴅ ʙʏ <a href=https://t.me/its_me_krish_tg>ᴋʀɪꜱʜ</a></i></b>",
-            reply_markup=keyboard,
-            disable_web_page_preview=True
-        )
+        await message.reply_photo(photo="https://ibb.co/1JjQkmH", caption="Hᴇʏ Bʀᴏ/Sɪs ,\n\n<b><blockquote>Yᴏᴜ Dᴏɴ'ᴛ ʜᴀᴠᴇ ᴀɴʏ Pʀᴇᴍɪᴜᴍ Pʟᴀɴs !!\n\nIғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ʀᴇsᴛʀɪᴄᴛᴇᴅ Cᴏɴᴛᴇɴᴛ ғᴏʀᴍ ᴀɴʏ Bᴏᴛ / Cʜᴀɴɴᴇʟ / Gʀᴏᴜᴘ !! In batch mode ᴛʜᴇɴ ᴘᴜʀᴄʜᴀsᴇ Oᴜʀ Pʀᴇᴍɪᴜᴍ Pʟᴀɴ ᴀᴛ ᴀғғᴏʀᴅᴀʙʟᴇ ᴘʀɪᴄᴇ ᴛᴏ ᴜsᴇ ᴛʜᴇ ʙᴏᴛ click premium button and drop msg!!</blockquote></b>\nPᴏᴡᴇʀᴇᴅ ʙʏ @its_me_krish_tg", 
+                                 reply_markup=InlineKeyboardMarkup([[
+                                              InlineKeyboardButton('✇ Query ✇', url="https://t.me/its_me_krish_tg"),
+                                              InlineKeyboardButton('✨BUY PREMIUM ✨', url="http://t.me/its_me_krish_tg")]])
+                                )
         return 1
 
 
@@ -94,12 +88,13 @@ async def get_seconds(time_string):
 
 
 
-PROGRESS_BAR = """\n
-**__Completed__** : {1}/{2}
-**__Bytes__** : {0}%
-**__Speed__** : {3}/s
-**__Time__** : {4}\n\n
-**__Powered by [KRISH](https://t.me/its_me_krish_tg)__**
+PROGRESS_BAR = """\n<b>
+╭━━━━❰🅺🆁🅸🆂🅷❱━━━>
+🗃️ sɪᴢᴇ: {1}/{2}
+⏳️ ᴅᴏɴᴇ : {0}%
+🚀 sᴘᴇᴇᴅ: {3}/s
+⏰️ ᴇᴛᴀ: {4}
+╰━━━━━━━━━━━━━━━ </b>
 """
 
 
