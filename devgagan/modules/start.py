@@ -7,14 +7,12 @@ from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardBu
 
 # ------------------- Start-Buttons ------------------- #
 
-buttons = InlineKeyboardMarkup(
-    [
-        [InlineKeyboardButton("Update", url="https://t.me/+9U8Td9WZ2dk1ZGU1"),
-        InlineKeyboardButton("Support", url="https://t.me/+Kus9t8btLPRhYzll")],
-        [ InlineKeyboardButton("Buy Premium", url= "t.me/its_me_krish_tg"),
-         InlineKeyboardButton("Help", url="https://graph.org/vTelegraphBot-09-27-5")]
-    ]
-)
+buttons =[[
+        InlineKeyboardButton('✇ Uᴘᴅᴀᴛᴇs ✇', url="https://t.me/+9U8Td9WZ2dk1ZGU1"),
+        InlineKeyboardButton('✨BUY PRIMIUM ✨', url="https://t.me/its_me_krish_tg")
+    ],[
+        InlineKeyboardButton('〄 Hᴇʟᴘ', url="https://graph.org/vTelegraphBot-09-27-5")
+    ]]
 
 @app.on_message(filters.command("start"))
 async def start(_, message):
