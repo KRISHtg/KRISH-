@@ -20,7 +20,17 @@ async def chk_user(message, user_id):
     if user_id in user or user_id in OWNER_ID:
         return 0
     else:
-        await message.reply_text("Sir, you don't have premium access!!")
+        keyboard = InlineKeyboardMarkup([
+            [InlineKeyboardButton("Cʟɪᴄᴋ Hᴇʀᴇ ᴛᴏ Sᴇᴇ Pʟᴀɴs", url="https://t.me/pocket_fm_and_kuku_fm/311")],
+            [InlineKeyboardButton("ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ ", url="https://t.me/+9U8Td9WZ2dk1ZGU1"),
+             InlineKeyboardButton("ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ", url="https://t.me/its_me_krish_tg")]
+        ])
+        
+        await message.reply_text(
+            "<b>Hᴇʏ Bʀᴏ/Sɪs ,\n\n<blockquote>Yᴏᴜ Dᴏɴ'ᴛ ʜᴀᴠᴇ ᴀɴʏ Pʀᴇᴍɪᴜᴍ Pʟᴀɴs !! </blockquote>\n\nIғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ʀᴇsᴛʀɪᴄᴛᴇᴅ Cᴏɴᴛᴇɴᴛ ғᴏʀᴍ ᴀɴʏ Bᴏᴛ / Cʜᴀɴɴᴇʟ / Gʀᴏᴜᴘ !! ᴛʜᴇɴ ᴘᴜʀᴄʜᴀsᴇ Oᴜʀ Pʀᴇᴍɪᴜᴍ Pʟᴀɴ ᴀᴛ ᴀғғᴏʀᴅᴀʙʟᴇ ᴘʀɪᴄᴇ ᴛᴏ ᴜsᴇ ᴛʜᴇ ʙᴏᴛ !!\n\n<i>Pᴏᴡᴇʀᴇᴅ ʙʏ <a href=https://t.me/its_me_krish_tg>ᴋʀɪꜱʜ</a></i></b>",
+            reply_markup=keyboard,
+            disable_web_page_preview=True
+        )
         return 1
 
 
