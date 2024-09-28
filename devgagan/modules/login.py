@@ -60,6 +60,10 @@ async def generate_session(_, message):
     if joined == 1:
         return
         
+    # user_checked = await chk_user(message, message.from_user.id)
+    # if user_checked == 1:
+        # return
+        
     user_id = message.chat.id   
     
     number = await _.ask(user_id, 'Please enter your phone number along with the country code. \nExample: +19876543210', filters=filters.text)   
